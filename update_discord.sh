@@ -8,7 +8,7 @@ DEB_FILE="/tmp/discord_latest.deb"
 curl -L -o "$DEB_FILE" "$URL"
 
 # Install the .deb file
-sudo dpkg -i "$DEB_FILE"
+dpkg -i "$DEB_FILE"
 
 # Clean up
 rm -f "$DEB_FILE"

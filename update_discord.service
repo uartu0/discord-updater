@@ -1,0 +1,13 @@
+[Unit]
+Description=Update Discord on Startup
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+RemainAfterExit=yes
+Type=oneshot
+ExecStart=/bin/update_discord.sh
+User=root
+
+[Install]
+WantedBy=multi-user.target
