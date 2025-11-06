@@ -13,7 +13,7 @@ cp update_discord.sh /bin/update_discord.sh
 chmod +x /bin/update_discord.sh
 
 # copying service to default path
-cp service /etc/systemd/system/update_discord.service
+cp update_discord.service /etc/systemd/system/update_discord.service
 
 # starting and enabling service
 systemctl daemon-reload
